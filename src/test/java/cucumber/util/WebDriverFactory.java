@@ -28,10 +28,6 @@ public class WebDriverFactory {
                     bsLocalArgs.put("key", "CmFt243AEbpXbFWqzarn");
                     local.start(bsLocalArgs);
                 }
-            case "safari":
-                //TODO: implement SafariDriver to factory
-                //return new SafariDriver();
-                //throw new RuntimeException("Unsupported webdriver: " + webdriver);
             default:
                 throw new RuntimeException("Unsupported webdriver: " + webdriver);
         }

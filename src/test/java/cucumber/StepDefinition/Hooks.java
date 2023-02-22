@@ -22,7 +22,7 @@ public class Hooks {
      * Delete all cookies at the start of each scenario to avoid
      * shared state between tests
      */
-    public void openBrowser(Scenario scenario){
+    public void openBrowser(Scenario scenario) throws Exception{
         this.scenario = scenario;
         WebDriverManager.chromedriver().setup();
         driver = WebDriverFactory.createWebDriver();
